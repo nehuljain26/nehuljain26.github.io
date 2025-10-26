@@ -1,4 +1,4 @@
-title: "Dr. Nehul Jain"
+title: "Nehul Jain"
 description: "Academic Profile"
 theme: minima
 markdown: kramdown
@@ -8,12 +8,12 @@ plugins:
 
 author:
   name: "Nehul Jain"
-  email: "nehul@example.com"
+  email: "nehul.jain26@gmail.com"
 
 scholar:
   style: apa
   locale: en
-  bibliography: _bibliography/publications.bib
+  bibliography: ./_bibliography/publications.bib
   bibliography_template: bibentry
   sort_by: year
   order: descending
