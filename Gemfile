@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2"
-gem "minima", "~> 2.5"
-gem "jekyll-scholar", "~> 7.2.1"
-gem "bibtex-ruby", "~> 5.0"
+gem 'github-pages', "~> 223", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+gem 'jekyll-scholar', group: :jekyll_plugins
+gem "webrick", "~> 1.7", group: :jekyll_plugins
