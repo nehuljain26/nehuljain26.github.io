@@ -1,0 +1,14 @@
+name: "Nehul Jain"
+position: "Researcher, Theoretical Computer Science"
+institution: "IIT XYZ"
+interests:
+  - Algorithmic Game Theory
+  - Distributed Systems
+  - Formal Methods
+education:
+  - degree: Ph.D.
+    institution: "IIT XYZ"
+    year: 2025
+  - degree: M.Tech
+    institution: "IIT ABC"
+    year: 2020

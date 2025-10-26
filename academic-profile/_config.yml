@@ -1,0 +1,19 @@
+title: "Dr. Nehul Jain"
+description: "Academic Profile"
+theme: minima
+markdown: kramdown
+
+plugins:
+  - jekyll-scholar
+
+author:
+  name: "Nehul Jain"
+  email: "nehul@example.com"
+
+scholar:
+  style: apa
+  locale: en
+  bibliography: _bibliography/publications.bib
+  bibliography_template: bibentry
+  sort_by: year
+  order: descending

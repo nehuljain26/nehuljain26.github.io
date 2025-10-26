@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.6;
+  color: #333;
+}
+header, footer {
+  text-align: center;
+}
+h1, h2 {
+  color: #004d7a;
+}
+nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #004d7a;
+}
+section {
+  margin-bottom: 2em;
+}
+.bibliography {
+  list-style-type: none;
+  padding-left: 0;
+}
+.bibliography li {
+  margin-bottom: 1em;
+}

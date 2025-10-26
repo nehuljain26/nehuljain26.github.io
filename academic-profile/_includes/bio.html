@@ -1,0 +1,12 @@
+<section id="bio">
+  <h2>About Me</h2>
+  <p><strong>{{ site.data.bio.name }}</strong></p>
+  <p>{{ site.data.bio.position }}, {{ site.data.bio.institution }}</p>
+  <p><strong>Research Interests:</strong> {{ site.data.bio.interests | join: ", " }}</p>
+  <h3>Education</h3>
+  <ul>
+    {% for edu in site.data.bio.education %}
+    <li>{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
+    {% endfor %}
+  </ul>
+</section>
