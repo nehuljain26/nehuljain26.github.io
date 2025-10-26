@@ -1,6 +1,3 @@
-- course: "Algorithms and Data Structures"
-  semester: "Spring 2024"
-  role: "Instructor"
-- course: "Theory of Computation"
-  semester: "Fall 2023"
+- course: "Automata"
+  semester: "Spring 2017"
   role: "Teaching Assistant"
