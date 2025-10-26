@@ -14,7 +14,7 @@ author:
 scholar:
   style: apa
   locale: en
-  bibliography: publications.bib
+  bibliography: publications.bib   # the file is in _bibliography/
   bibliography_template: bibentry
   sort_by: year
   order: descending
