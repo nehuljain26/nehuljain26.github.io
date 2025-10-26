@@ -13,7 +13,7 @@ author:
 scholar:
   style: apa
   locale: en
-  bibliography: ./_bibliography/publications.bib
+  bibliography: _bibliography/publications.bib
   bibliography_template: bibentry
   sort_by: year
   order: descending
