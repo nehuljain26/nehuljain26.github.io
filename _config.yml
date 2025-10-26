@@ -2,6 +2,7 @@ title: "Nehul Jain"
 description: "Academic Profile"
 theme: minima
 markdown: kramdown
+safe: false
 
 plugins:
   - jekyll-scholar
@@ -13,7 +14,7 @@ author:
 scholar:
   style: apa
   locale: en
-  bibliography: publications.bib
+  bibliography: _bibliography/publications.bib
   bibliography_template: bibentry
   sort_by: year
   order: descending
