@@ -47,7 +47,7 @@ jobs:
       - name: Fix URI gem conflict
         run: |
           gem uninstall uri -v 0.10.0
-          gem install uri -v 1.0.4
+          gem install uri -v 1.1.1
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
