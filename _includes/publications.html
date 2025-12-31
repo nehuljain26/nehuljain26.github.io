@@ -1,4 +1,13 @@
 <section id="publications">
     <h2>Publications</h2>
-    {% bibliography %}
+    <ul>
+        {% for pub in site.data.publications %}
+        <li>
+            <strong>{{ pub.title }}</strong><br>
+            {{ pub.authors }}<br>
+            <em>{{ pub.venue }}</em><br>
+            <a href="{{ pub.link }}">[PDF]</a>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
