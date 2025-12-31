@@ -1,15 +1,24 @@
 - title: "Central Decision Maker Architecture in ATS Games"
-  authors: "Adsul, Bharat and Jain, Nehul"
+  authors: "Bharat Adsul and  Nehul Jain"
   venue: "FSTTCS 2025"
-  #link: "https://example.com/paper1.pdf"
+  link: "https://doi.org/10.4230/LIPIcs.FSTTCS.2025.5"
 
 - title: "Asynchronous Transition System Games for Two Processes and Their Analysis"
-  authors: "Adsul, Bharat and Jain, Nehul"
+  authors: "Bharat Adsul and  Nehul Jain"
   venue: "ICLA 2025"
   link: "https://doi.org/10.1007/978-3-031-89610-1\_5"
 
 - # @article{DBLP:journals/corr/abs-2410-04420,
-  author       : "Bharat Adsul and  Nehul Jain"
+  authors       : "Bharat Adsul and  Nehul Jain"
   title      : "Non-deterministic asynchronous automata games and their undecidability"
   link         : "https://doi.org/10.48550/arXiv.2410.04420"
   venue   : "arXiv"
+
+
+- # @article{DBLP:journals/corr/abs-2410-04420,
+  authors       : "Nehul Jain, Saikat Dutta, Ansuman Banerjee, Anil K. Ghosh, Lihua Xu, Huibiao Zhu"
+  title      : "Using Daikon to Prioritize and Group Unit Bugs"
+  link         : "http://dx.doi.org/10.1007/978-3-319-07602-7_14"
+  venue   : "FACS 2013"
+
+
