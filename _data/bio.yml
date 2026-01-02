@@ -1,6 +1,7 @@
 name: "Nehul Jain"
 position: "Researcher Scholar, Computer Science"
 institution: "IIT Bombay"
+description: "I am a PhD student under the supervision of Prof. Bharat Adsul, working in theoretical computer science. My research focuses on distributed games on asynchronous transition systems (ATS), studying decision-making and verification problems in concurrent and distributed systems."
 interests:
   - Algorithmic Game Theory
   - Distributed Systems
