@@ -38,3 +38,27 @@ section {
 .profile-header p {
   margin: 0;
 }
+
+.header-text {
+  display: flex;
+  flex-direction: column; /* Stacks H1 and P vertically */
+  align-items: flex-start; /* Aligns them to the left */
+}
+
+.section-title {
+  display: flex;        /* Sets items in a row */
+  align-items: baseline; /* Aligns the text on the "line" (so small text sits nicely next to big text) */
+  gap: 15px;            /* Space between "Publications" and the links */
+  margin-bottom: 1em;   /* Restore the spacing below the whole section */
+}
+
+.section-title h2 {
+  margin: 0;           /* Crucial: removes the default spacing around H2 */
+}
+
+.section-title .links a {
+  font-size: 0.9em;    /* Optional: Makes links slightly smaller than the heading */
+  margin-right: 10px;  /* Spacing between ORCID and DBLP */
+  text-decoration: underline;
+  color: #2F855A;      /* Matches your existing color scheme */
+}

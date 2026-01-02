@@ -9,9 +9,12 @@
   <header>
     <div class="profile-header">
       <img src="/assets/photo.jpeg" alt="profile photo" />
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.data.bio.position }}, {{ site.data.bio.institution }}</p>
-  </div>
+      
+      <div class="header-text">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.data.bio.position }}, {{ site.data.bio.institution }}</p>
+      </div>
+    </div>
     <nav>
       <a href="/">Home</a> |
       <a href="#publications">Publications</a> |

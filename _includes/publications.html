@@ -1,11 +1,17 @@
 <section id="publications">
-    <h2>Publications</h2>
+<div class="section-title">
+  <h2>Publications</h2>
+  
+  <div class="links">
     {% if site.data.bio.orcid %}
-    <a href="{{ site.data.bio.orcid}}" target="_blank">ORCID</a> 
+      <a href="{{ site.data.bio.orcid}}" target="_blank">ORCID</a> 
     {% endif %}
+    
     {% if site.data.bio.dblp %}
-    <a href="{{ site.data.bio.dblp}}" target="_blank">DBLP</a>
+      <a href="{{ site.data.bio.dblp}}" target="_blank">DBLP</a>
     {% endif %}
+  </div>
+</div>
     <ul>
         {% for pub in site.data.publications %}
         <li>
