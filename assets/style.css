@@ -26,3 +26,15 @@ section {
 .bibliography li {
   margin-bottom: 1em;
 }
+
+.profile-header {
+  display: flex;           /* Makes children sit in a row */
+  align-items: center;     /* Vertically centers items */
+  gap: 15px;               /* Adds space between the image, title, and text */
+}
+
+/* Optional: Remove default margins for a tighter look */
+.profile-header h1, 
+.profile-header p {
+  margin: 0;
+}
