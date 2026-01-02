@@ -7,6 +7,9 @@
             {{ pub.authors }}<br>
             <em>{{ pub.venue }}</em><br>
             <a href="{{ pub.link }}">[PDF]</a>
+            {% if pub.presenation %}
+                <a href="{{ pub.presenation }}">[Presentation]</a>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
