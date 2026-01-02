@@ -41,8 +41,14 @@ section {
 
 .header-text {
   display: flex;
-  flex-direction: column; /* Stacks H1 and P vertically */
-  align-items: flex-start; /* Aligns them to the left */
+  flex-direction: column; /* Forces Title and P to stack top-to-bottom */
+  justify-content: center;
+}
+
+/* Ensure the text inside doesn't have extra margins pushing it around */
+.header-text h1, 
+.header-text p {
+  margin: 0;
 }
 
 .section-title {
