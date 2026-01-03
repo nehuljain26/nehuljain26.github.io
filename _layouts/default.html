@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+
   <header>
     <div class="profile-header">
-      <img src="/assets/photo.jpeg" alt="profile photo" />
+      <img src="/assets/photo.jpeg" alt="{{ site.title }}" />
       
       <div class="header-text">
         <h1>{{ site.title }}</h1>
         <p>{{ site.data.bio.position }}, {{ site.data.bio.institution }}</p>
 
-        <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
-        <a href="{{ site.data.contact.github }}">GitHub</a>
-        <a href="{{ site.data.contact.linkedin }}">LinkedIn</a>
-      </ul>
+        <div class="contact-links">
+          <a href="mailto:{{ site.data.contact.email }}">Email</a>
+          <a href="{{ site.data.contact.github }}">GitHub</a>
+          <a href="{{ site.data.contact.linkedin }}">LinkedIn</a>
+        </div>
       </div>
     </div>
+
     <nav>
-      <a href="/">Home</a> |
-      <a href="#publications">Publications</a> |
-      <a href="#teaching">Teaching</a> |
-      <!-- <a href="#contact">Contact</a> -->
+      <a href="/">Contact</a> 
+      <a href="#publications">Publications</a> 
+      <a href="#teaching">Teaching</a> 
     </nav>
   </header>
 
@@ -35,5 +37,6 @@
   <footer>
     <small>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</small>
   </footer>
+
 </body>
 </html>

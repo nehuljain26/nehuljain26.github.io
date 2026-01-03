@@ -1,70 +1,121 @@
+/* --- 1. BASIC SETUP --- */
 body {
   font-family: sans-serif;
   margin: 40px auto;
   max-width: 800px;
   line-height: 1.6;
   color: #333;
+  padding: 0 20px; /* Adds side padding so text doesn't touch screen edges on mobile */
 }
+
+a {
+  color: #2F855A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header, footer {
   text-align: center;
+  margin-bottom: 40px;
 }
-h1, h2 {
+
+/* --- 2. PROFILE HEADER (Desktop Layout) --- */
+.profile-header {
+  display: flex;            /* Row: Image Left, Text Right */
+  align-items: center;      /* Vertically center align */
+  justify-content: center;  /* Center the whole block on the page */
+  gap: 25px;                /* Space between image and text */
+  margin-bottom: 30px;
+  text-align: left;         /* Reset text align so name/bio align left */
+}
+
+.profile-header img {
+  width: 120px;             /* Fixed width */
+  height: 120px;            /* Fixed height (square) */
+  object-fit: cover;        /* Prevents stretching */
+  border-radius: 50%;       /* Circle */
+}
+
+/* The container for Name, Bio, and Links */
+.header-text {
+  display: flex;
+  flex-direction: column;   /* Stack Name, Bio, Links top-to-bottom */
+}
+
+.header-text h1 {
+  margin: 0;
+  line-height: 1.2;
   color: #2F855A;
+}
+
+.header-text p {
+  margin: 5px 0 10px 0;     /* Spacing around the position text */
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Contact Links Row (Email, Github, LinkedIn) */
+.contact-links {
+  font-size: 0.9rem;
+}
+.contact-links a {
+  margin-right: 10px;
+}
+
+/* --- 3. NAVIGATION --- */
+nav {
+  margin-top: 20px;
+  border-top: 1px solid #eee; /* Optional: subtle separator */
+  padding-top: 20px;
 }
 nav a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #2F855A;
+  margin: 0 10px;
+  font-weight: bold;
 }
+
+/* --- 4. PUBLICATIONS & SECTIONS --- */
 section {
   margin-bottom: 2em;
 }
-.bibliography {
-  list-style-type: none;
-  padding-left: 0;
-}
-.bibliography li {
-  margin-bottom: 1em;
-}
 
-.profile-header {
-  display: flex;           /* Makes children sit in a row */
-  align-items: center;     /* Vertically centers items */
-  gap: 15px;               /* Adds space between the image, title, and text */
-}
-
-/* Optional: Remove default margins for a tighter look */
-.profile-header h1, 
-.profile-header p {
-  margin: 0;
-}
-
-.header-text {
-  display: flex;
-  flex-direction: column; /* Forces Title and P to stack top-to-bottom */
-  justify-content: center;
-}
-
-/* Ensure the text inside doesn't have extra margins pushing it around */
-.header-text h1, 
-.header-text p {
-  margin: 0;
-}
-
+/* This forces H2 and the Links (ORCID/DBLP) onto one row */
 .section-title {
-  display: flex;        /* Sets items in a row */
-  align-items: baseline; /* Aligns the text on the "line" (so small text sits nicely next to big text) */
-  gap: 15px;            /* Space between "Publications" and the links */
-  margin-bottom: 1em;   /* Restore the spacing below the whole section */
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #eee; /* Optional styling */
+  padding-bottom: 5px;
 }
 
 .section-title h2 {
-  margin: 0;           /* Crucial: removes the default spacing around H2 */
+  margin: 0;
+  color: #2F855A;
 }
 
 .section-title .links a {
-  font-size: 0.9em;    /* Optional: Makes links slightly smaller than the heading */
-  margin-right: 10px;  /* Spacing between ORCID and DBLP */
-  text-decoration: underline;
-  color: #2F855A;      /* Matches your existing color scheme */
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* --- 5. MOBILE RESPONSIVENESS (Small Screens) --- */
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column; /* Stack Image on Top */
+    text-align: center;     /* Center text */
+    gap: 15px;
+  }
+
+  .header-text {
+    align-items: center;    /* Center the flex items */
+  }
+  
+  .profile-header img {
+    width: 100px;           /* Smaller image */
+    height: 100px;
+  }
 }
