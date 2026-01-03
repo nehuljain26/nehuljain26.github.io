@@ -5,7 +5,7 @@ body {
   max-width: 800px;
   line-height: 1.6;
   color: #333;
-  padding: 0 20px; /* Essential for mobile spacing */
+  padding: 0 20px;
 }
 
 a {
@@ -17,9 +17,11 @@ a:hover {
   text-decoration: underline;
 }
 
-header, footer {
-  margin-bottom: 40px;
-  /* Note: text-align is handled inside specific classes below */
+/* --- 2. HEADER & DIVIDER FIX --- */
+header {
+  margin-bottom: 40px;           /* Pushes the main content away */
+  border-bottom: 1px solid #eee; /* THE RESTORED DIVIDER LINE */
+  padding-bottom: 40px;          /* Space between your bio and the line */
 }
 
 footer {
@@ -29,27 +31,26 @@ footer {
   padding-top: 20px;
 }
 
-/* --- 2. PROFILE HEADER (Desktop Layout) --- */
+/* --- 3. PROFILE HEADER --- */
 .profile-header {
-  display: flex;            /* Row: Image Left, Text Right */
-  align-items: center;      /* Vertically center align */
-  justify-content: center;  /* Center the whole block on the page */
-  gap: 25px;                /* Space between image and text */
-  margin-bottom: 30px;
-  text-align: left;         /* Reset text align so name/bio align left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  /* Removed margin-bottom here because the <header> padding handles it now */
+  text-align: left;
 }
 
 .profile-header img {
-  width: 120px;             /* Fixed width */
-  height: 120px;            /* Fixed height (square) */
-  object-fit: cover;        /* Prevents stretching */
-  border-radius: 50%;       /* Circle */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-/* The container for Name, Bio, and Links */
 .header-text {
   display: flex;
-  flex-direction: column;   /* Stack Name, Bio, Links top-to-bottom */
+  flex-direction: column;
 }
 
 .header-text h1 {
@@ -59,28 +60,28 @@ footer {
 }
 
 .header-text p {
-  margin: 5px 0 10px 0;     /* Spacing around the position text */
+  margin: 5px 0 10px 0;
   color: #555;
   font-size: 0.95rem;
 }
 
-/* Contact Links Row (Email, Github, LinkedIn) */
+/* Contact Links */
 .contact-links {
   font-size: 0.9rem;
 }
 .contact-links a {
-  margin-right: 15px; /* Added slightly more space since Nav is gone */
+  margin-right: 15px;
   font-weight: bold;
 }
 
-/* --- 3. PUBLICATIONS & SECTION TITLES --- */
-/* Use this class in your markdown for the single-row Title + ORCID links */
+/* --- 4. PUBLICATIONS & SECTION TITLES --- */
 .section-title {
   display: flex;
   align-items: baseline;
   gap: 15px;
   margin-bottom: 1em;
-  border-bottom: 1px solid #eee;
+  /* Optional: You can keep or remove the border below specific section titles */
+  /* border-bottom: 1px solid #eee; */ 
   padding-bottom: 5px;
 }
 
@@ -95,20 +96,20 @@ footer {
   color: #555;
 }
 
-/* --- 4. MOBILE RESPONSIVENESS --- */
+/* --- 5. MOBILE RESPONSIVENESS --- */
 @media (max-width: 600px) {
   .profile-header {
-    flex-direction: column; /* Stack Image on Top */
-    text-align: center;     /* Center text */
+    flex-direction: column;
+    text-align: center;
     gap: 15px;
   }
 
   .header-text {
-    align-items: center;    /* Center the flex items */
+    align-items: center;
   }
   
   .profile-header img {
-    width: 100px;           /* Smaller image */
+    width: 100px;
     height: 100px;
   }
 }
