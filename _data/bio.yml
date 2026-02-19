@@ -2,7 +2,8 @@ name: "Nehul Jain"
 position: "Research Scholar, Computer Science"
 institution: "IIT Bombay"
 #description: "I am a PhD student under the supervision of Prof. Bharat Adsul, working in theoretical computer science. My research focuses on distributed games on asynchronous transition systems (ATS), studying decision-making and memory requirements."
-description: "I have recently completed my PhD under the supervision of Bharat Adsul in theoretical computer science. My doctoral thesis, “Games on Asynchronous Transition Systems,” introduces ATS games, a model of distributed games over asynchronous transition systems where processes operate under causal partial information. It establishes tight decidability and memory bounds for key subclasses—including two-process and single decision-maker settings—clarifying how information flow and decision structure govern distributed strategy synthesis."
+#description: "I have recently completed my PhD under the supervision of Bharat Adsul in theoretical computer science. My doctoral thesis, “Games on Asynchronous Transition Systems,” introduces ATS games, a model of distributed games over asynchronous transition systems where processes operate under causal partial information. It establishes tight decidability and memory bounds for key subclasses—including two-process and single decision-maker settings—clarifying how information flow and decision structure govern distributed strategy synthesis."
+description: "I recently completed my PhD in theoretical computer science. My research focuses on distributed strategy synthesis in games played on asynchronous transition systems, with particular emphasis on the roles of partial information and memory in distributed games."
 interests:
   - Algorithmic Game Theory
   - Formal Methods 
