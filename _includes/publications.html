@@ -48,6 +48,22 @@
         <li>Synopsis <a href="/assets/Synopsis_nehul_jain.pdf" target="_blank">[PDF]</a></li>     
       </ul>
        
-   
+
+
+  <div class="links">[
+
+    <a href="/assets/IIT_Bombay_PhD_Thesis_2025.pdf" target="_blank"> Thesis</a>|
+    <a href="/assets/defence_presentation_feb2026.pdf" target="_blank">Defence</a>|
+    <a href="/assets/Synopsis_nehul_jain.pdf" target="_blank">Synopsis </a>
+    ]
+  </div>
+
+
+   <h3>Education</h3>
+  <ul>
+    {% for edu in site.data.bio.education %}
+    <li>{{ edu.degree }}, {{ edu.institution }} ({{ edu.year }})</li>
+    {% endfor %}
+  </ul>
 
 </section>
