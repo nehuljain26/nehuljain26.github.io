@@ -14,7 +14,10 @@
       
       <div class="header-text">
         <h1>{{ site.title }}</h1>
-        <p>{{ site.data.bio.position }}, {{ site.data.bio.institution }}</p>
+        <p>{{ site.data.bio.position }} <br>
+ {{ site.data.bio.institution }}<br>
+ {{ site.data.bio.about }}          
+                </p>
 
         <div class="contact-links">
           <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
