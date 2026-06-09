@@ -19,13 +19,20 @@
  {{ site.data.bio.about }}          
                 </p>
 
-<p class="links-line">
-  <a href="mailto:{{ site.data.contact.email }}">Email</a>
-  <a href="{{ site.data.contact.cv }}">CV</a>
-  <a href="{{ site.data.bio.googlescholar }}">Google Scholar</a>
-  <a href="{{ site.data.bio.dblp }}">DBLP</a>
-  <a href="{{ site.data.bio.orcid }}">ORCID</a>
-  <a href="{{ site.data.contact.github }}">GitHub</a>
+<p>
+  <strong>Email:</strong>
+  <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+  {% if site.data.contact.personal_email %}
+    · <a href="mailto:{{ site.data.contact.personal_email }}">alt</a>
+  {% endif %}
+  ·
+  {% if site.data.contact.cv %}
+    <a href="{{ site.data.contact.cv }}">CV</a> ·
+  {% endif %}
+  <a href="{{ site.data.bio.googlescholar }}">Google Scholar</a> ·
+  <a href="{{ site.data.bio.dblp }}">DBLP</a> ·
+  <a href="{{ site.data.bio.orcid }}">ORCID</a> ·
+  <a href="{{ site.data.contact.github }}">GitHub</a> ·
   <a href="{{ site.data.contact.linkedin }}">LinkedIn</a>
 </p>
       </div>
