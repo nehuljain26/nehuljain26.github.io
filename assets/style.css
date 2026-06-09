@@ -1,4 +1,11 @@
 /* --- 1. BASIC SETUP --- */
+.links-line a::after {
+  content: " | ";
+}
+.links-line a:last-child::after {
+  content: "";
+}
+
 body {
   font-family: sans-serif;
   margin: 40px auto;
