@@ -1,1 +1,14 @@
-
+<section>
+  <div class="section-title">
+    <h2 >Research and Academic Positions</h2>
+    </div>
+  <ul>
+     {% for i in site.data.research-profile %}
+    <li>
+      <b>{{ i.postion }}</b> <br>
+      {{ i.postion }} <br>
+      Host: {{ i.host }} <br>
+      {{ i.description }}
+    </li>
+  </ul>
+</section>
