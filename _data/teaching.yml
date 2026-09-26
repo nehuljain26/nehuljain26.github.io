@@ -1,19 +1,29 @@
+- course: "Theory of Computation with Prof. C. Aiswarya"
+  semester: "TOC 2026"
+  role: "Teaching Assistant"
+  institute: "Chennai Mathematical Institute"
+
 - course: "Discrete Structures with Prof. Bharat G. Adsul"
   semester: "CS 207-2017-1"
   role: "Teaching Assistant"
+  institute: "IIT Bombay"
 
 - course: "Special Topics in Automata and Logics with Prof. Bharat G. Adsul"
   semester: "CS 713-2014-2 "
   role: "Teaching Assistant"
+  institute: "IIT Bombay"
 
 - course: "Design and Analysis of Algorithms with Prof. Bharat G. Adsul"
   semester: "CS 218-2014-1"
   role: "Teaching Assistant"
+  institute: "IIT Bombay"
 
 - course: "Computer Networks (Minor) with Prof. Bhaskaran Raman"
   semester: "CS 348m-2013-2"
   role: "Teaching Assistant"
+  institute: "IIT Bombay"
 
 - course: "Topics in Mathematical Foundations of Formal Verification with Prof. Supratik Chakraborty"
   semester: "CS 719-2013-1"
   role: "Teaching Assistant"
+  institute: "IIT Bombay"
