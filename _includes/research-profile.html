@@ -7,7 +7,12 @@
     <li>
       <b>{{ i.postion }}</b> <br>
       {{ i.institute }} <br>
+      {% if i.host %}
       Host: {{ i.host }} <br>
+       {% endif %}
+      {% if i.supervisor %}
+      Supervisor: {{ i.supervisor }} <br>
+       {% endif %}
       {{ i.description }}
     </li>
     {% endfor %}
