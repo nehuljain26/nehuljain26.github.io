@@ -1,4 +1,14 @@
 - postion: "Postdoctoral Fellow in Computer Science"
-  institute: "Chennai Mathematical Institute (CMI), India."
+  institute: "Chennai Mathematical Institute (CMI), India"
   host: "Prof. C. Aiswarya"
-  description: "Research in formal methods, automata and games, concurrency theory, and distributed synthesis."
+  description: "Research in formal methods, automata and games, concurrency theory, and distributed synthesis"
+  
+- postion: "Short-Term Research Visitor"
+  institute: "Tata Institute of Fundamental Research (TIFR), Mumbai, India"
+  host: "Prof. Shibashis Guha"
+  description: "Research on two-process asynchronous games and their extension to parity objectives"
+  
+- postion: "Doctoral Research Scholar"
+  institute: "Department of Computer Science and Engineering, Indian Institute of Technology Bombay, India"
+  supervisor: "Prof. Bharat G. Adsul"
+  description: "Doctoral research on Asynchronous Transition System games, Mazurkiewicz-trace semantics, distributed strategies, decidability and complexity, and finite-memory constructions"
